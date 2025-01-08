@@ -16,7 +16,7 @@ date_time = '_date_' + str(current_date_time.date()).replace('-', '_') + '_time_
 PATH = '/opt/airflow/data'
 
 default_args = {
-    'start_date':datetime(2024, 12, 8, 23, 55),
+    'start_date':datetime(2025, 1, 9, 20, 30),
     'owner':'airflow'
 }
 
@@ -24,7 +24,7 @@ dag = DAG(
     'ETL',
     default_args=default_args,
     description='Get_data',
-    schedule_interval='0 0/3 * * *'
+    schedule_interval='0 0 * * *'
 )
 
 
